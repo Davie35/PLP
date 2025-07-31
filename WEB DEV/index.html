@@ -2,28 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A brief description of your page for SEO." />
+  <meta name="description" content="Learn how to build accessible and SEO-friendly websites using HTML5 semantic elements. A beginner-friendly guide to proper web structure." />
+  <meta name="keywords" content="HTML5, semantic HTML, accessibility, SEO, web development" />
   <meta name="author" content="Your Name" />
-  <title>Page Title</title>
+  <title>Building Accessible & SEO-Friendly Web Pages</title>
 </head>
 <body>
 
   <header>
-    <!-- Site logo or title and navigation -->
+    <h1>Welcome to WebCraft: Building Better Web Pages</h1>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <!-- Main navigation links -->
-  </nav>
-
   <main>
-    <!-- Main page content -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About This Page</h2>
+      <p><p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+</p>
+    </section>
+
+    <section id="articles" aria-labelledby="articles-heading">
+      <h2 id="articles-heading">Featured Articles</h2>
+
+      <article aria-labelledby="article1-heading">
+        <h3 id="article1-heading">Why Semantic HTML Matters</h3>
+        <p><p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+</p>
+      </article>
+
+      <article aria-labelledby="article2-heading">
+        <h3 id="article2-heading">Introduction to HTML5 </h3>
+        <p>Landmark elements such as <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> help screen readers quickly identify sections of the page, enabling easier navigation.</p>
+      </article>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Us</h2>
+      <p>Have questions or feedback? Reach out to us at <a href="mailto:info@example.com">info@example.com</a>.</p>
+    </section>
   </main>
 
   <footer>
-    <!-- Footer content -->
+    <p>&copy; 2025 Davie. All rights reserved.</p>
   </footer>
 
 </body>
