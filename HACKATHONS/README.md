@@ -34,4 +34,4 @@ An accessible contact form for collaboration, feedback, or opportunities.
 
 ## 🚀 Live Demo
 
-Check out the live version here:
+Check out the live version here: https://davie35.github.io/PLP/HACKATHONS/
