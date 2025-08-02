@@ -1,0 +1,28 @@
+name: Deploy Portfolio
+
+on:
+  push:
+    branches:
+      - main  # or "master" depending on your default branch
+
+permissions:
+  contents: write  # needed to push to gh-pages
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./HACKATHONS # ⬅️ Change this to your folder name
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v3
