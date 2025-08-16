@@ -1,0 +1,76 @@
+/* General reset */
+* { box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  background: white;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  max-width: 800px;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #007bff;
+  color: white;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.btn.outline {
+  background: white;
+  border: 1px solid #007bff;
+  color: #007bff;
+}
+
+/* Cards */
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 1rem 0;
+  background: #fafafa;
+}
+
+/* Demo Boxes */
+.demo {
+  border: 2px solid #333;
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+.padding-demo { padding: 2rem; background: #e6f0ff; }
+.border-demo { border: 6px solid #007bff; background: #f0f8ff; }
+.margin-demo { margin: 2rem 0; background: #fff0f5; }
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

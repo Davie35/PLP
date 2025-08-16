@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS WEEK 3
+
+  </title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>CSS PRACTICE</h1>
+      <p class="tagline">A simple page to practice margins, padding, borders, and backgrounds.</p>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#typography">Typography</a>
+        <a href="#cards">Cards</a>
+        <a href="#box-lab">Box Lab</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="typography" class="section">
+      <h2>Typography & Basic Styling</h2>
+      <p>
+        This page demonstrates how the CSS Box Model affects layout. Each box you see is a block-level
+        element with its own <strong>content</strong>, <strong>padding</strong>, <strong>border</strong>, and
+        <strong>margin</strong>. Try toggling the <code>.debug</code> class in the CSS to visualize boundaries.
+      </p>
+      <p class="note">
+        Tip: <em>Padding</em> increases space inside a box around its content, while <em>margin</em> creates space
+        outside the box between neighbors. Borders sit between padding and margin.
+      </p>
+      <button class="btn">Primary Action</button>
+      <button class="btn btn-outline">Outline Action</button>
+    </section>
+
+    <section id="cards" class="section">
+      <h2>Card Layout (Grid)</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Card One</h3>
+          <p>
+            This card has its own padding, border, and background. Notice the consistent spacing
+            between cards is controlled by <code>gap</code> on the grid plus card margins.
+          </p>
+          <a class="btn btn-link" href="#cards">Learn more →</a>
+        </article>
+
+        <article class="card">
+          <h3>Card Two</h3>
+          <p>
+            Borders define the box edge. Rounded corners soften the look. The shadow adds depth
+            without relying on external libraries.
+          </p>
+          <a class="btn btn-link" href="#cards">Learn more →</a>
+        </article>
+
+        <article class="card">
+          <h3>Card Three</h3>
+          <p>
+            Experiment by changing the <code>--space</code> variables in <code>:root</code> to see
+            global spacing scale adjustments.
+          </p>
+          <a class="btn btn-link" href="#cards">Learn more →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="box-lab" class="section">
+      <h2>Box Lab (Padding vs Margin vs Border)</h2>
+      <div class="box-row">
+        <div class="box-demo padding-demo">
+          <h4>Padding Demo</h4>
+          <p>
+            Extra <strong>padding</strong> inside the box makes the content breathe. The border stays at the outer edge of padding.
+          </p>
+        </div>
+
+        <div class="box-demo border-demo">
+          <h4>Border Demo</h4>
+          <p>
+            A thicker <strong>border</strong> changes the box’s visual weight and total outer dimensions (when using border-box sizing).
+          </p>
+        </div>
+
+        <div class="box-demo margin-demo">
+          <h4>Margin Demo</h4>
+          <p>
+            Larger <strong>margin</strong> pushes neighboring boxes away without changing the box’s internal spacing.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 • Built with plain HTML & CSS</small>
+    </div>
+  </footer>
+</body>
+</html>
