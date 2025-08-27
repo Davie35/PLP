@@ -1,0 +1,89 @@
+/* ========== Base Styles ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Navigation using Flexbox */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  background: #555;
+  padding: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main Layout using Grid */
+.grid-layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* content + sidebar */
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.content {
+  background: #f4f4f4;
+  padding: 1rem;
+}
+
+.sidebar {
+  background: #e4e4e4;
+  padding: 1rem;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+/* ========== Responsive Breakpoints ========== */
+
+/* Mobile (default stacked layout) */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-layout {
+    grid-template-columns: 1fr; /* stack content and sidebar */
+  }
+}
+
+/* Tablet (two columns but more breathing space) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .grid-layout {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* Desktop (default layout applies) */
+@media (min-width: 1025px) {
+  .grid-layout {
+    grid-template-columns: 3fr 1fr;
+  }
+}
